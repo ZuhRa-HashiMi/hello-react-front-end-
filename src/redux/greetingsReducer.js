@@ -1,5 +1,5 @@
 // Action
-const GET_MESSAGE = "greetings/message";
+const GET_MESSAGE = 'greetings/message';
 
 // Action Creator
 const getMessage = (message) => ({ type: GET_MESSAGE, payload: message });
