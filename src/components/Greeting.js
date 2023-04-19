@@ -8,7 +8,7 @@ const Greeting = () => {
   const message = useSelector((state) => state.greeting);
 
   async function fetchMessage() {
-    await axios.get("api/messages").then((response) => {
+      await axios.get("http://127.0.0.1:3000/api/messages").then((response) => {
       dispatch(getMessage(response.data.greeting));
     });
   }
